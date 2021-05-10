@@ -5,7 +5,10 @@
     <link rel = "stylesheet" type = "text/css" href = "style.css">   
 </head>  
 <body>  
-    <div id = "frm">  
+    <div id = "frm"> 
+        <style>
+            h1 {text-align: center;}
+            </style>
         <h1>Login</h1>  
         <form name="f1" action = "authentication.php" onsubmit = "return validation()" method = "POST">  
             <p>  
@@ -18,9 +21,15 @@
             </p>  
             <p>     
                 <input type =  "submit" id = "btn" value = "Login" />  
+                <a href = "#">Forgot Password?</a>
+            </p> 
+            <p> 
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                  </label>
             </p>  
         </form>  
-    </div>  
+    </div> 
     <!--validation for empty field -->  
     <script>  
             function validation()  
