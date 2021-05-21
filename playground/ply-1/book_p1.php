@@ -18,7 +18,6 @@ if(isset($_GET['date'])){
 }
 
 if(isset($_POST['submit']))
-    if(isset($_POST['username']))
     if(isset($_POST['name']))
     if(isset($_POST['emailid']))
     if(isset($_POST['department']))
@@ -26,7 +25,6 @@ if(isset($_POST['submit']))
     if(isset($_POST['timeslot']))
 
     {
-    $username =$_POST['username'];
     $name = $_POST['name'];
     $emailid = $_POST['emailid'];
     $department =$_POST['department'];
@@ -40,8 +38,8 @@ if(isset($_POST['submit']))
         if($result->num_rows>0){
         $msg = "<div class='alert alert-danger'>Already Booked</div>";
         }else{
-    $stmt = $mysqli->prepare("INSERT INTO booking_p1 (username, name, emailid, department, event_name, date, timeslot) VALUES (?,?,?,?,?,?,?)");
-    $stmt->bind_param('sssssss', $username, $name, $emailid, $department, $event_name, $date, $timeslot);
+    $stmt = $mysqli->prepare("INSERT INTO booking_p1 (name, emailid, department, event_name, date, timeslot) VALUES (?,?,?,?,?,?,?)");
+    $stmt->bind_param('ssssss', $name, $emailid, $department, $event_name, $date, $timeslot);
     $stmt->execute();
     $msg = "<div class='alert alert-success'>Booking Form Submitted Successfully</div>";
     $booking_p1[]=$timeslot;
@@ -128,10 +126,6 @@ function timeslots($duration, $cleanup, $start, $end){
 <div class="form-group">
 <label for="">Time Slot</label>
 <input readonly type="text" class="form-control" id="timeslot" name="timeslot">
-</div>
-<div class="form-group">
-<label for="">Username</label>
-<input required type="text" class="form-control" name="username">
 </div>
 <div class="form-group">
 <label for="">Name</label>
