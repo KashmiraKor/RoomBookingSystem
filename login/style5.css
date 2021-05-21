@@ -1,0 +1,61 @@
+*
+{
+    margin: 0;
+    padding: 0;
+     box-sizing: border-box;
+     
+
+}
+header
+{
+    width: 100;
+    height: 100vh;
+    background-image: url('meetingblue.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav
+{
+    width: 100%;
+    height: 15vh;
+    background-color:rgba(0,0,0,0.5);
+    color: deepskyblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo
+{
+width: 25%;
+text-align:left;
+color: turquoise;
+font-family: 'Texturina', serif;
+}
+
+nav .MENU
+{
+    width: 40%;
+    display: flex; justify-content: space-around;
+    font-family: 'Texturina', serif;
+}
+nav .MENU a
+{
+  text-decoration: none;
+  color: aquamarine;
+  font-weight: bold;
+  align-content: flex-end;
+}
+
+main
+{
+    width:100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    color: rgb(20, 24, 224);
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px turquoise;
+    font-family: 'Dancing Script', cursive;
+}
