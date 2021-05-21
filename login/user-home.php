@@ -38,7 +38,7 @@
         <div class="dropdown">
         <span>PLAYGROUND</span>
         <div class="dropdown-content">
-            <p><a href=""> 1st Playground</a> </p>
+            <p><a href="play1.php"> 1st Playground</a> </p>
             <p> 2nd Playground</p>
             <p> 3rd Playground</p>
             <p> 4th Playground</p>

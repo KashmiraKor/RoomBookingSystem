@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 26, 2021 at 03:11 PM
+-- Generation Time: May 21, 2021 at 07:43 PM
 -- Server version: 10.4.18-MariaDB
 -- PHP Version: 8.0.3
 
@@ -18,32 +18,42 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `userform`
+-- Database: `roombookingsystem`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `usertable`
+-- Table structure for table `user`
 --
 
-CREATE TABLE `usertable` (
+CREATE TABLE `user` (
   `id` int(11) NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `email` varchar(255) NOT NULL,
-  `password` varchar(255) NOT NULL,
-  `code` mediumint(50) NOT NULL,
-  `status` text NOT NULL
+  `name` varchar(50) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `password` varchar(50) NOT NULL,
+  `code` int(10) NOT NULL,
+  `status` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`id`, `name`, `email`, `password`, `code`, `status`) VALUES
+(1, 'Sanchit', 'sanchitdeshpande01@gmail.com', '12345', 0, 'verified'),
+(2, 'Kashmira K', 'kashmiranamdevkor@gmail.com', '123456', 0, 'verified'),
+(3, 'Mohd Kaif', 'kaifedrisi@gmail.com', '1234567', 0, 'verified'),
+(4, 'Srishti Sharma', '73srishtisharma@gmail.com', '12345678', 0, 'verified');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `usertable`
+-- Indexes for table `user`
 --
-ALTER TABLE `usertable`
+ALTER TABLE `user`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -51,10 +61,10 @@ ALTER TABLE `usertable`
 --
 
 --
--- AUTO_INCREMENT for table `usertable`
+-- AUTO_INCREMENT for table `user`
 --
-ALTER TABLE `usertable`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `user`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
