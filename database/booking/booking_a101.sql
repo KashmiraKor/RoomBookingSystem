@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 21, 2021 at 05:00 PM
+-- Generation Time: May 21, 2021 at 07:13 PM
 -- Server version: 10.4.18-MariaDB
 -- PHP Version: 7.4.16
 
@@ -30,7 +30,6 @@ SET time_zone = "+00:00";
 CREATE TABLE `booking_a101` (
   `Id` int(11) NOT NULL,
   `name` varchar(50) NOT NULL,
-  `username` varchar(50) NOT NULL,
   `emailid` varchar(50) NOT NULL,
   `department` varchar(50) NOT NULL,
   `event_name` varchar(50) NOT NULL,
@@ -42,8 +41,8 @@ CREATE TABLE `booking_a101` (
 -- Dumping data for table `booking_a101`
 --
 
-INSERT INTO `booking_a101` (`Id`, `name`, `username`, `emailid`, `department`, `event_name`, `date`, `timeslot`) VALUES
-(1, 'Kashmira ', 'kashmirakor@vit.edu.in', 'kashmira.kor@vit.edu.in', 'ETRX', 'booking', '2021-05-21', '09:30AM - 10:00AM');
+INSERT INTO `booking_a101` (`Id`, `name`, `emailid`, `department`, `event_name`, `date`, `timeslot`) VALUES
+(1, 'Kashmira ', 'kashmira.kor@vit.edu.in', 'ETRX', 'booking', '2021-05-21', '09:30AM - 10:00AM');
 
 --
 -- Indexes for dumped tables
