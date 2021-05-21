@@ -10,7 +10,7 @@
                     <div class="logo"><h1>PLAYGROUND</h1></div>
                     <nav>    
                         <div class="MENU">
-                            <a href="#">Playground - 1</a>
+                            <a href="index_p1.php">Playground - 1</a>
                             <a href="#">Playground - 2</a>
                             <a href="#">Playground - 3</a>
                             <a href="#">Playground - 4</a>

@@ -10,7 +10,7 @@
                     <div class="logo"><h1>CLASSROOMS</h1></div>
                     <nav>    
                         <div class="MENU">
-                            <a href="#">101</a>
+                            <a href="index_b101.php">101</a>
                             <a href="#">102</a>
                             <a href="#">103</a>
                             <a href="#">104</a>
